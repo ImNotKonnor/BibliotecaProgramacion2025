@@ -25,8 +25,8 @@ class Libro:
         return self.__dict__
     
 class Estudiante:
-    def __init__(self, IdEstudiante, Cedula, Nombre, Apellido, Fecha_Nacimiento, Direccion, Telefono, Email):
-         self.IdEstudiante = IdEstudiante
+    def __init__(self, Id_Estudiante, Cedula, Nombre, Apellido, Fecha_Nacimiento, Direccion, Telefono, Email):
+         self.Id_Estudiante = Id_Estudiante
          self.Cedula = Cedula
          self.Nombre = Nombre
          self.Apellido = Apellido
@@ -40,9 +40,9 @@ class Estudiante:
         return self.__dict__
 
 class Prestamo:
-    def __init__(self, isbn, id_usuario, fecha_prestamo=None, fecha_devolucion=None):
+    def __init__(self, isbn, id_, fecha_prestamo=None, fecha_devolucion=None):
         self.isbn = isbn
-        self.id_usuario = id_estudiante
+        self.Id_Estudiante = Id_Estudiante
         self.fecha_prestamo = fecha_prestamo or str(date.today())
         self.fecha_devolucion = fecha_devolucion or str(date.today() + timedelta(days=7))
 
