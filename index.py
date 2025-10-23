@@ -40,7 +40,7 @@ class Estudiante:
         return self.__dict__
 
 class Prestamo:
-    def __init__(self, isbn, id_, fecha_prestamo=None, fecha_devolucion=None):
+    def __init__(self, isbn, Id_Estudiante, fecha_prestamo=None, fecha_devolucion=None):
         self.isbn = isbn
         self.Id_Estudiante = Id_Estudiante
         self.fecha_prestamo = fecha_prestamo or str(date.today())
